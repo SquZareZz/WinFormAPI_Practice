@@ -35,6 +35,8 @@
             comboBoxValueFilter = new ComboBox();
             label1 = new Label();
             label2 = new Label();
+            buttonResetComboBox = new Button();
+            buttonResetAll = new Button();
             ((System.ComponentModel.ISupportInitialize)SpiderDataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -71,6 +73,7 @@
             // 
             // comboBoxTitleFilter
             // 
+            comboBoxTitleFilter.Enabled = false;
             comboBoxTitleFilter.FormattingEnabled = true;
             comboBoxTitleFilter.IntegralHeight = false;
             comboBoxTitleFilter.Location = new Point(68, 276);
@@ -112,11 +115,35 @@
             label2.TabIndex = 6;
             label2.Text = "數值";
             // 
+            // buttonResetComboBox
+            // 
+            buttonResetComboBox.Font = new Font("Microsoft JhengHei UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonResetComboBox.Location = new Point(68, 421);
+            buttonResetComboBox.Name = "buttonResetComboBox";
+            buttonResetComboBox.Size = new Size(137, 74);
+            buttonResetComboBox.TabIndex = 7;
+            buttonResetComboBox.Text = "重置篩選條件";
+            buttonResetComboBox.UseVisualStyleBackColor = true;
+            buttonResetComboBox.Click += buttonResetComboBox_Click;
+            // 
+            // buttonResetAll
+            // 
+            buttonResetAll.Font = new Font("Microsoft JhengHei UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonResetAll.Location = new Point(68, 543);
+            buttonResetAll.Name = "buttonResetAll";
+            buttonResetAll.Size = new Size(137, 74);
+            buttonResetAll.TabIndex = 8;
+            buttonResetAll.Text = "重置全部資料";
+            buttonResetAll.UseVisualStyleBackColor = true;
+            buttonResetAll.Click += buttonResetAll_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 729);
+            Controls.Add(buttonResetAll);
+            Controls.Add(buttonResetComboBox);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(comboBoxValueFilter);
@@ -140,5 +167,7 @@
         private ComboBox comboBoxValueFilter;
         private Label label1;
         private Label label2;
+        private Button buttonResetComboBox;
+        private Button buttonResetAll;
     }
 }

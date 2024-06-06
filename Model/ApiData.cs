@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace WinFormAPI_Practice.Model
 {
+    //針對要撈的資料，預先設定好其參數資料型態
     public class ApiData
     {
         // "https://data.moi.gov.tw/MoiOD/System/DownloadFile.aspx?DATA=C65202A6-92EE-4533-A415-786B74665BF2"
